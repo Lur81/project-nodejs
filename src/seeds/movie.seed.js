@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const dotenv = require('dotenv').config();
 
 const Movie = require ("../api/models/movies.model");
 
@@ -43,7 +44,7 @@ const arrayMovies = [
 
   
   //mongoose.connect(process.env.DB_URL,
-  mongoose.connect("mongodb+srv://root:root@cluster0.yk7yuyt.mongodb.net/movies?retryWrites=true&w=majority", 
+  mongoose.connect(process.env.DB_URL, 
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

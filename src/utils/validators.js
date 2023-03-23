@@ -12,7 +12,7 @@ const validatePassword = (password) => {
 };
 
 const usedEmail = async (email) => {
-  const users = await User.find({ email: email }); //compruebo si mi email está repetido
+  const users = await User.find({ email: email}); //compruebo si mi email está repetido
   return users.length;
 };
 
