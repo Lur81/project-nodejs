@@ -534,7 +534,6 @@ const arrayMovies = [
     "synopsis": "A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who cross her path.",
     "billboard": "empty"
   },
-  
 
 ];
  

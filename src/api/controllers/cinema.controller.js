@@ -9,7 +9,6 @@ const getCinema = async (req, res) => {
   }
 };
 
-
 const getCinemaById = async (req, res) => {
   try {
     const {id} = req.params;

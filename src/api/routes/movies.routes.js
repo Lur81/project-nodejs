@@ -18,7 +18,7 @@ router.get("/", getMovie);
 router.get("/:id", getMovieById);
 router.get("/title/:title", getMovieByTitle);
 router.get("/genre/:genre", getMovieByGenre);
-router.put("/", putMovie);
+router.put("/:id", putMovie);
 router.post("/", postMovie);
 router.delete("/:id", deleteMovie);
 
