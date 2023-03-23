@@ -40,10 +40,16 @@ const arrayMovies = [
       year: 2004,
       genre: "Comedia romántica",
     },
+    {
+      title: "Titanic",
+      director: "James Cameron",
+      year: 1997,
+      genre: "Drama",
+    },
   ];
 
   
-  //mongoose.connect(process.env.DB_URL,
+ 
   mongoose.connect(process.env.DB_URL, 
   {
     useNewUrlParser: true,
