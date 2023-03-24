@@ -1,6 +1,6 @@
 const express = require("express");
 // const router = require("../controllers/cinema.controller");
-
+const {isAdmin, isAuth} = require('../../middlewares/auth')
 const router = express.Router();
 
 const { getCinema, 
@@ -10,10 +10,10 @@ const { getCinema,
         deleteCinema
     } = require("../controllers/cinema.controller");
 
-router.get("/", getCinema);
-router.get("/:id", getCinemaById);
-router.put("/:id", putCinema);
-router.post("/", postCinema);
-router.delete("/:id", deleteCinema);
+router.get("/", [isAuth], getCinema);
+router.get("/:id", [isAuth], getCinemaById);
+router.put("/:id", [isAdmin], putCinema);
+router.post("/", [isAdmin], postCinema);
+router.delete("/:id", [isAdmin], deleteCinema);
 
 module.exports = router;

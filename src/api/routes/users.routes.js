@@ -1,4 +1,5 @@
 const express = require("express");
+const {isAdmin, isAuth} = require('../../middlewares/auth');
 
 const {
   login,
@@ -9,7 +10,6 @@ const {
   getUser
 } = require("../controllers/users.controllers");
 
-const { isAuth, isAdmin } = require("../../middlewares/auth");
 const router = express.Router();
 
 router.post("/login", login);
