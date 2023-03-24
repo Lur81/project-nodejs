@@ -24,7 +24,6 @@ const isAuth = async (req, res, next) =>{
         req.user = userLogged; //añadimos el token autorizado a la request
 
         next();
-
         
     } catch (error) {
         return res.status(500).json(error);

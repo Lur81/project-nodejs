@@ -8,4 +8,4 @@ const verifySign = (token) => {
     return jwt.verify(token, process.env.JWT_KEY);  // comprobar que nuestro token en base a nuestro JWT_KEY coincide con id y email
 }
 
-module.exports = {generateSign, verifySign}
+module.exports = {generateSign, verifySign};

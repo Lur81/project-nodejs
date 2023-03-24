@@ -61,7 +61,7 @@ const arrayMovies = [
     "duration": 98,
     "genre": "Crime",
     "valuation": 8,
-    "synopsis": "empty",
+    "synopsis": "Poor Jerry Lundegaard. He's deep in debt. His wealthy father-in-law has no respect for him. He cheats customers at the car dealership where he works. And now he's hired a bumbling duo to kidnap his wife--a plan that goes horribly awry, leading to homicide. Enter Marge Gunderson, one of the most fabulous movie cops in film history. The very-pregnant Marge--played marvelously by Frances McDormand in an Oscar-winning and career-defining performance--just goes about her everyday business, eating (in nearly every scene), talking to the people in the community, and examining bloody corpses as if no day is different from the next. A multiple murder in the small town of Brainerd, Minnesota--home of Paul Bunyan, as the sign claims--seems to have little effect on her. Yet she has an innate cop sense--she is very, very good at her job and determined to solve the case in her offhanded manner.",
     "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679573657/xwl0bxwecta1e5yu6zcd.jpg "
   },
   {
@@ -395,26 +395,6 @@ const arrayMovies = [
     "billboard": "empty"
   },
   {
-    "title": "Inception",
-    "director": "Christopher Nolan",
-    "year": 2010,
-    "duration": 148,
-    "genre": "Action",
-    "valoration": 9.3,
-    "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
-    "billboard": "empty"
-  },
-  {
-    "title": "The Social Network",
-    "director": "David Fincher",
-    "year": 2010,
-    "duration": 120,
-    "genre": "Biography",
-    "valoration": 8.0,
-    "synopsis": "Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, but is later sued by two brothers who claimed he stole their idea.",
-    "billboard": "empty"
-  },
-  {
     "title": "The Artist",
     "director": "Michel Hazanavicius",
     "year": 2011,
@@ -517,7 +497,7 @@ const arrayMovies = [
   {
     "title": "Nomadland",
     "director": "Chloé Zhao",
-    "year": 2020,
+    "year": 2021,
     "duration": 107,
     "genre": "Drama",
     "valoration": 7.4,
@@ -534,6 +514,16 @@ const arrayMovies = [
     "synopsis": "A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who cross her path.",
     "billboard": "empty"
   },
+  {
+      "title": "The Batman",
+      "director": "Matt Reeves",
+      "year": 2022,
+      "duration": 175,
+      "genre": "Action",
+      "valoration": 9.3,
+      "synopsis": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that goes much deeper than he ever anticipated, as a new wave of criminal masterminds begins to rise up and challenge his abilities as a detective and a hero.",
+      "billboard": "empty"
+  },
 
 ];
  
@@ -547,14 +537,14 @@ mongoose.connect(process.env.DB_URL,
     const allMovies = await Movie.find();
     if(allMovies.length > 0){
         await Movie.collection.drop()
-        console.log("Películas borradas");
+        console.log("Deleted items");
     };
 })
-.catch((err) => console.log("Error borrando peliculas", err))
+.catch((err) => console.log("Error deleting items", err))
 .then(async () => {
     const moviesMap = arrayMovies.map((movie) => new Movie(movie));
     await Movie.insertMany(moviesMap);
-    console.log("Películas insertadas");
+    console.log(`${arrayMovies.length} Inserted items`);
 })
-.catch((err) => console.log("Error insertando peliculas", err))
+.catch((err) => console.log("Error inserting items", err))
 .finally(() => mongoose.disconnect());
