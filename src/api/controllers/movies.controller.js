@@ -69,11 +69,16 @@ const putMovie = async (req, res) => {
       const {id}=req.params;
       const putMovie = new Movie(req.body);
       putMovie._id = id;
-      const updateMovie = await Movie.findByIdAndUpdate(id, putMovie, {new: true}); 
-      if(!updateMovie){    
-          return res.status(404).json({ "message": "Movie not found"});
-       }
+
+      if (req.file) {
+        newMovie.billboard = req.file.path;
+      }
+      const updateMovie = await Movie.findByIdAndUpdate(id, putMovie); 
+      if (updateMovie.billboard) {
+        deleteFile(updateMovie.billboard);
+      }
       return res.status(200).json(updateMovie);
+
   } catch (error) {
       return res.status(500).json(error);
   }

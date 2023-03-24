@@ -7,7 +7,7 @@ const deleteFile = (url) => {
 
     const imgToDelete = `${folder}/${nameSplited[0]}`;
     if(imgToDelete !== "dragonBall/pegatina-bola-de-dragon-4-goku_qtqr41"){
-        cloudinary.uploader.destroy(imgToDelete, ()=> console.log('imagen borrada en cloudinary'));
+        cloudinary.uploader.destroy(imgToDelete, ()=> console.log('Image deleted in Cloudinary'));
     }
 }
 
