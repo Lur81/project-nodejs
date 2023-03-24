@@ -11,7 +11,7 @@ const { getCinema,
     } = require("../controllers/cinema.controller");
 
 router.get("/", getCinema);
-router.get("/", getCinemaById);
+router.get("/:id", getCinemaById);
 router.put("/:id", putCinema);
 router.post("/", postCinema);
 router.delete("/:id", deleteCinema);
