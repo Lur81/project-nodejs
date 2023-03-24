@@ -8,25 +8,25 @@ const arrayCinemas = [
     "name": "primer cine",
     "city": "madrid",
     "postalCode": "28223",
-    "movies": ["", ""]
+    "movies": ""
 },
 {
     "name": "segundo cine",
     "city": "sevilla",
     "postalCode": "20987",
-    "movies": ["", ""]
+    "movies": ""
 },
 {
     "name": "tercer cine",
     "city": "galicia",
     "postalCode": "27000",
-    "movies": ["", ""]
+    "movies": ""
 },
 {
     "name": "cuarto cine",
     "city": "valencia",
     "postalCode": "21543",
-    "movies": ["", ""]
+    "movies": ""
 }
 ];
 
