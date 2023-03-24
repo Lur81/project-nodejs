@@ -1,5 +1,5 @@
 const Movie = require("../models/movies.model");
-
+const { deleteFile } = require("../../middlewares/delete.file");
 
 const getMovie = async (req, res) => {
     try {
@@ -52,8 +52,11 @@ const getMovieByYear = async (req, res) => {
 
 const postMovie = async (req, res) => {
     try {
-      console.log(req.body);
+      // console.log(req.body);
       const newMovie = new Movie(req.body); 
+      if (req.file) {
+        newMovie.billboard = req.file.path;
+      }
       const createdMovie = await newMovie.save(); 
       return res.status(201).json(createdMovie);
     } catch (error) {
@@ -83,6 +86,9 @@ const deleteMovie = async (req, res) => {
       const deleteMovie = await Movie.findByIdAndDelete(id); 
       if(!deleteMovie){     
           return res.status(404).json({ "message": "Movie not found"});
+      }
+      if (deleteMovie.image) {
+        deleteFile(deleteMovie.image);
       }
       return res.status(200).json(deleteMovie);
   } catch (error) {

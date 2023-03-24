@@ -10,8 +10,8 @@ const movieSchema = new Schema(
         duration: {type: Number, required: true},
         genre: {type: String, required: true},
         valoration: {type: Number, required: false},
-        synopsis: {type: String, required: true},
-        billboard: {type: String, required: false, default: "https://res.cloudinary.com/da3lrqri1/image/upload/v1679572491/movies/portadaDefault_n65yft.jpg"},
+        synopsis: {type: String, required: false},
+        billboard: {type: String, required: true, default: "https://res.cloudinary.com/da3lrqri1/image/upload/v1679572491/movies/portadaDefault_n65yft.jpg"},
     },{
         timestamps: true
     }

@@ -6,7 +6,7 @@ const storage = new CloudinaryStorage(
     {
         cloudinary: cloudinary,
         params: {
-            folder: "dragonBall",
+            folder: "movies",
             allowedFormats: ["jpg", "png", "jpeg", "webp", "gif", "pdf"]
         }
     }
