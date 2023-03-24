@@ -432,7 +432,7 @@ const arrayMovies = [
     "genre": "Action",
     "valoration": 8.0,
     "synopsis": "A frontiersman on a fur trading expedition in the 1820s fights for survival after being mauled by a bear and left for dead by members of his own hunting team.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679653818/revenant_rhgjud.jpg"
   },
   {
     "title": "La La Land",
@@ -472,7 +472,7 @@ const arrayMovies = [
     "genre": "Comedy",
     "valoration": 8.6,
     "synopsis": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679653812/parasite_bl67ou.jpg"
   },
   {
     "title": "Tenet",
@@ -512,7 +512,7 @@ const arrayMovies = [
     "genre": "Comedy",
     "valoration": 7.5,
     "synopsis": "A young woman, traumatized by a tragic event in her past, seeks out vengeance against those who cross her path.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679653812/PyW_kedfi3.jpg"
   },
   {
       "title": "The Batman",
@@ -522,7 +522,7 @@ const arrayMovies = [
       "genre": "Action",
       "valoration": 9.3,
       "synopsis": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that goes much deeper than he ever anticipated, as a new wave of criminal masterminds begins to rise up and challenge his abilities as a detective and a hero.",
-      "billboard": "empty"
+      "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679653804/b_t1p6hp.jpg"
   },
 
 ];

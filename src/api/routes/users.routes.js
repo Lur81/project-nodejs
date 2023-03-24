@@ -15,7 +15,7 @@ router.post("/login", login);
 router.post("/register", register);
 router.post("/logout", [isAuth], logout);
 router.post("/checksession", [isAuth], checkSession);
-router.delete("/deleteUser", [isAuth], deleteUser);
-router.get("/getUser", [isAuth], getUser);
+router.delete("/:id", deleteUser);
+router.get("/", getUser);
 
 module.exports = router;
