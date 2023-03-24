@@ -11,7 +11,7 @@ const movieSchema = new Schema(
         genre: {type: String, required: false},
         valoration: {type: Number, required: false},
         synopsis: {type: String, required: false},
-        billboard: {type: String, required: true, default: "https://res.cloudinary.com/da3lrqri1/image/upload/v1679668241/movies/portadaDefault_aiu31k.jpg"},
+        billboard: {type: String, required: true, default: "https://res.cloudinary.com/da3lrqri1/image/upload/v1679669527/movies/portadaDefault_fygrtx.jpg"},
     },{
         timestamps: true
     }

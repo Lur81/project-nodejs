@@ -6,8 +6,9 @@ const deleteFile = (url) => {
     const folder = imgSplited[imgSplited.length - 2]; //cojo el penultimo elemento
 
     const imgToDelete = `${folder}/${nameSplited[0]}`;
-    if(imgToDelete !== "https://res.cloudinary.com/da3lrqri1/image/upload/v1679668241/movies/portadaDefault_aiu31k.jpg"){
+    if(imgToDelete !== "movies/portadaDefault_fygrtx"){
         cloudinary.uploader.destroy(imgToDelete, ()=> console.log('Image deleted in Cloudinary'));
+        console.log(imgToDelete);
     }
 }
 
