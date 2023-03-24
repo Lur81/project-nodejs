@@ -71,7 +71,7 @@ const putMovie = async (req, res) => {
       putMovie._id = id;
 
       if (req.file) {
-        newMovie.billboard = req.file.path;
+        putMovie.billboard = req.file.path;
       }
       const updateMovie = await Movie.findByIdAndUpdate(id, putMovie); 
       if (updateMovie.billboard) {
