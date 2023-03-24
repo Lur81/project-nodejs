@@ -50,8 +50,35 @@ const logout = async (req, res) => {
     }   
 }
 
+const checkSession = async (req, res) => {
+    try {
+        res.status(200).json(req.user)
+    } catch (error) {
+        return res.status(500).json(error)
+    }
+}
 
-module.exports = {login, register, logout};
+const deleteUser = async (req, res) => {
+    try {
+        const {id} = req.params;
+        const deleteUser = await User.findByIdAndDelete();
+        if(!deleteUser) {
+            return res.status(404).json({ "message": "Usuario no encontrado" });
+        }
+        return res.status(200).json(deleteUser);
+    } catch (error) {
+        return res.status(500).json(error)
+    }
+}
 
+const getUser = async (req, res) => {
+    try {
+        const allUsers = await User.find();  
+        return res.status(200).json(allUsers); 
+    } catch (error) {
+        return res.status(500).json(error);
+    }
+}
 
-///minuto 30
+module.exports = {login, register, logout, checkSession, getUser, deleteUser};
+

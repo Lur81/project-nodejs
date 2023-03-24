@@ -9,6 +9,8 @@ const userSchema = new Schema(
         password: {type: String, require: true},
         membership: {type: Number, require: false},
         postalCode: {type: Number, require: false},
+    },{
+        timestamps: true
     }
 )
 

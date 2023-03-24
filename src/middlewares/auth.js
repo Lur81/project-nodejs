@@ -1,5 +1,5 @@
 const { verifySign } = require("../utils/jwt");
-// const User = require("../api/models/users.models");
+const User = require("../api/models/users.models");
 
 const isAuth = async (req, res, next) =>{
     try {

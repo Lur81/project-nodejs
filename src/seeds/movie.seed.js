@@ -282,7 +282,7 @@ const arrayMovies = [
     "genre": "Action, Crime, Drama",
     "valoration": 9.0,
     "synopsis": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/the_batman-449856406-large_vcju0r.png"
   },
   {
     "title": "Inception",
@@ -292,7 +292,7 @@ const arrayMovies = [
     "genre": "Action, Adventure, Sci-Fi",
     "valoration": 8.8,
     "synopsis": "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641711/movies/inception-652954101-large_wn8rpj.png"
   },
   {
     "title": "Gladiator",
@@ -302,7 +302,7 @@ const arrayMovies = [
     "genre": "Action, Adventure, Drama",
     "valoration": 8.5,
     "synopsis": "A former Roman General sets out to exact vengeance against the corrupt emperor who murdered his family and sent him into slavery.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641711/movies/gladiator-564554218-large_kbzn6m.png"
   },
   {
     "title": "The Lord of the Rings: The Fellowship of the Ring",
@@ -312,7 +312,7 @@ const arrayMovies = [
     "genre": "Action, Adventure, Drama",
     "valoration": 8.8,
     "synopsis": "A meek hobbit of the Shire and eight companions set out on a journey to Mount Doom to destroy the One Ring and the dark lord Sauron.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641711/movies/the_lord_of_the_rings_the_fellow_s7qkm7.png"
   },
   {
     "title": "The Prestige",
@@ -322,7 +322,7 @@ const arrayMovies = [
     "genre": "Drama, Mystery, Sci-Fi",
     "valoration": 8.5,
     "synopsis": "After a tragic accident, two stage magicians engage in a battle to create the ultimate illusion while sacrificing everything they have to outwit each other.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/the_prestige-464630296-large_iffpbz.png"
   },
   {
     "title": "Memento",
@@ -332,7 +332,7 @@ const arrayMovies = [
     "genre": "Mystery, Thriller",
     "valoration": 8.4,
     "synopsis": "A man with short-term memory loss attempts to track down his wife's murderer.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/memento-230609861-large_rr6exo.png"
   },
   {
     "title": "Eternal Sunshine of the Spotless Mind",
@@ -342,7 +342,7 @@ const arrayMovies = [
     "genre": "Drama, Romance, Sci-Fi",
     "valoration": 8.3,
     "synopsis": "When their relationship turns sour, a couple undergoes a medical procedure to have each other erased from their memories.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/eternal_sunshine_of_the_spotless_axqtzo.png"
   },
   {
     "title": "There Will Be Blood",
@@ -352,7 +352,7 @@ const arrayMovies = [
     "genre": "Drama",
     "valoration": 8.2,
     "synopsis": "A story of family, religion, hatred, oil and madness, focusing on a turn-of-the-century prospector in the early days of the business.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679647640/There_Will_Be_Blood_yzqxah.jpg"
   },
   {
     "title": "The Social Network",
@@ -362,7 +362,7 @@ const arrayMovies = [
     "genre": "Biography, Drama",
     "valoration": 7.7,
     "synopsis": "As Harvard student Mark Zuckerberg creates the social networking site that would become known as Facebook, he is sued by the twins who claimed he stole their idea, and by the co-founder who was later squeezed out of the business.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641709/movies/the_social_network-421032493-mme_jotpcw.png"
   },
   {
     "title": "The Departed",
@@ -372,7 +372,7 @@ const arrayMovies = [
     "genre": "Crime, Drama, Thriller",
     "valoration": 8.5,
     "synopsis": "An undercover cop and a mole in the police attempt to identify each other while infiltrating an Irish gang in South Boston.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641709/movies/the_departed-749477966-mmed_hfugoj.png"
   },
   {
     "title": "City of God",
@@ -382,7 +382,7 @@ const arrayMovies = [
     "genre": "Crime, Drama",
     "valoration": 8.6,
     "synopsis": "In the poverty-stricken favelas of Rio de Janeiro in the 1970s, two young men choose different paths. Rocket wants to become a photographer, while Lil Dice becomes a drug dealer and ruthless criminal.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641709/movies/cidade_de_deus-954148413-large_w9lsek.png"
   },
   {
     "title": "Amélie",
@@ -392,7 +392,7 @@ const arrayMovies = [
     "genre": "Comedy, Romance",
     "valoration": 8.3,
     "synopsis": "Amélie is an innocent and naive girl in Paris with her own sense of justice. She decides to help those around her and, along the way, discovers love.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/le_fabuleux_destin_d_amelie_poul_munarr.png"
   },
   {
     "title": "The Artist",
@@ -402,7 +402,7 @@ const arrayMovies = [
     "genre": "Comedy",
     "valoration": 8.0,
     "synopsis": "A silent movie star meets a young dancer, but the arrival of talking pictures sends their careers in opposite directions.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/the_artist-136693699-large_lwgpeb.png"
   },
   {
     "title": "Gravity",
@@ -412,7 +412,7 @@ const arrayMovies = [
     "genre": "Drama",
     "valoration": 7.7,
     "synopsis": "Two astronauts work together to survive after an accident leaves them stranded in space.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/gravity-595126003-mmed_rgr3jc.png"
   },
   {
     "title": "Birdman",
@@ -422,7 +422,7 @@ const arrayMovies = [
     "genre": "Comedy",
     "valoration": 7.7,
     "synopsis": "A washed-up actor, who once played a famous superhero, battles his ego and attempts to revive his career with a Broadway play.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/birdman_or_the_unexpected_virtue_vbsmle.png"
   },
   {
     "title": "The Revenant",
@@ -442,7 +442,7 @@ const arrayMovies = [
     "genre": "Comedy",
     "valoration": 8.0,
     "synopsis": "While navigating their careers in Los Angeles, a pianist and an actress fall in love while attempting to reconcile their aspirations for the future.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641709/movies/la_la_land-262021831-large_a4yoql.png"
   },
   {
     "title": "Blade Runner 2049",
@@ -452,7 +452,7 @@ const arrayMovies = [
     "genre": "Action",
     "valoration": 8.0,
     "synopsis": "A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641710/movies/blade_runner_2049-681477614-larg_r3iv86.png"
   },
   {
     "title": "A Star is Born",
@@ -462,7 +462,7 @@ const arrayMovies = [
     "genre": "Drama",
     "valoration": 7.7,
     "synopsis": "A musician helps a young singer find fame as age and alcoholism send his own career into a downward spiral.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/a_star_is_born-447479418-large_pl53ur.png"
   },
   {
     "title": "Parasite",
@@ -482,7 +482,7 @@ const arrayMovies = [
     "genre": "Action",
     "valoration": 7.5,
     "synopsis": "Armed with only one word -- Tenet -- and fighting for the survival of the entire world, the Protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/tenet-432994986-large_km5nmg.png"
   },
   {
     "title": "Black Panther",
@@ -492,7 +492,7 @@ const arrayMovies = [
     "genre": "Action",
     "valoration": 7.3,
     "synopsis": "T'Challa, heir to the hidden but advanced kingdom of Wakanda, must step forward to lead his people into a new future and confront a challenger from his country's past.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641708/movies/black_panther-992613805-large_gmex9p.png"
   },
   {
     "title": "Nomadland",
@@ -502,7 +502,7 @@ const arrayMovies = [
     "genre": "Drama",
     "valoration": 7.4,
     "synopsis": "A woman in her sixties who, after losing everything in the Great Recession, embarks on a journey through the American West, living as a van-dwelling modern-day nomad.",
-    "billboard": "empty"
+    "billboard": "https://res.cloudinary.com/da3lrqri1/image/upload/v1679641707/movies/nomadland-118487105-large_tikjxg.png"
   },
   {
     "title": "Promising Young Woman",
@@ -537,14 +537,14 @@ mongoose.connect(process.env.DB_URL,
     const allMovies = await Movie.find();
     if(allMovies.length > 0){
         await Movie.collection.drop()
-        console.log("Deleted items");
+        console.log("Deleted movies");
     };
 })
-.catch((err) => console.log("Error deleting items", err))
+.catch((err) => console.log("Error deleting movies", err))
 .then(async () => {
     const moviesMap = arrayMovies.map((movie) => new Movie(movie));
     await Movie.insertMany(moviesMap);
-    console.log(`${arrayMovies.length} Inserted items`);
+    console.log(`${arrayMovies.length} Inserted movies`);
 })
-.catch((err) => console.log("Error inserting items", err))
+.catch((err) => console.log("Error inserting movies", err))
 .finally(() => mongoose.disconnect());
