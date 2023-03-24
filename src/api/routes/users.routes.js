@@ -9,14 +9,14 @@ const {
   getUser
 } = require("../controllers/users.controllers");
 
-const { isAuth } = require("../../middlewares/auth");
+const { isAuth, isAdmin } = require("../../middlewares/auth");
 const router = express.Router();
 
 router.post("/login", login);
 router.post("/register", register);
 router.post("/logout", [isAuth], logout);
 router.post("/checksession", [isAuth], checkSession);
-router.delete("/:id", deleteUser);
-router.get("/", getUser);
+router.delete("/:id", [isAdmin], deleteUser);
+router.get("/", [isAdmin], getUser);
 
 module.exports = router;

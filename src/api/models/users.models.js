@@ -9,6 +9,7 @@ const userSchema = new Schema(
         password: {type: String, require: true},
         membership: {type: Number, require: false},
         postalCode: {type: Number, require: false},
+        role: {type: String, default: 'user', enum: ['admin', 'user']}
     },{
         timestamps: true
     }

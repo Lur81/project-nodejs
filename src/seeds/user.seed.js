@@ -10,24 +10,28 @@ const arrayUsers = [
     "password": "lourdes12345",
     "membership": 1,
     "postalCode": "28007",
+    "rol": "admin"
 },{
     "name": "ruben",
     "email": "ruben@ruben.com",
     "password": "ruben12345",
     "membership": 2,
     "postalCode": "22389",
+    "rol": "admin"
 },{
     "name": "nico",
     "email": "nico@nico.com",
     "password": "nico12345",
     "membership": 3,
     "postalCode": "24567",
+    "rol": "admin"
 },{
     "name": "daniel",
     "email": "daniel@daniel.com",
     "password": "daniel12345",
     "membership": 4,
     "postalCode": "28223",
+    "rol": "user"
 },
 ];
 
