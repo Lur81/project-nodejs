@@ -2,6 +2,7 @@ const express = require ("express");
 const dotenv = require ("dotenv");
 const {connect} = require ("./src/utils/database");
 const cloudinary = require('cloudinary').v2;
+const cors = require ('cors');
 
 const routerMovie = require ("./src/api/routes/movies.routes");
 const routerCinema = require ("./src/api/routes/cinema.routes");
@@ -16,9 +17,17 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_SECRET
 });
 
+
+
 const app = express();
 
 connect();
+
+//CORS --> CROSS ORIGIN RESOURCE SHARING -->  Intercambio de Recursos de Origen Cruzado -- > manera de compartir recursos entre origenes
+app.use(cors({
+    origin: "*"  //[*] para cualquier origen
+}));
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));

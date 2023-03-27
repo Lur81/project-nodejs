@@ -4,13 +4,13 @@ const { deleteFile } = require("../../middlewares/delete.file");
 const getMovie = async (req, res) => {
   try {
     let { page, limit } = req.query;
-    console.log(page);
+    //console.log(page);
     const numMovies = await Movie.countDocuments();
     limit = limit ? parseInt(limit) : 10;
     if (page && !isNaN(parseInt(page))) {
-      console.log("entro");
+      //console.log("entro");
       page = parseInt(page);
-      console.log(page);
+      //console.log(page);
       let numPages =
         numMovies % limit > 0 ? numMovies / limit + 1 : numMovies / limit;
 

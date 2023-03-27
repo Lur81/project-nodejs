@@ -15,7 +15,7 @@ const {
     } = require("../controllers/movies.controller");
 
 router.get("/year/", [isAuth], getMovieByYear);
-router.get("/", [isAuth], getMovie);
+router.get("/",/*/[isAuth]/,*/ getMovie);
 router.get("/:id", [isAuth], getMovieById);
 router.get("/title/:title", [isAuth], getMovieByTitle);
 router.get("/genre/:genre", [isAuth], getMovieByGenre);
